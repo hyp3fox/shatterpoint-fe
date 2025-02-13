@@ -1,0 +1,940 @@
+{
+  "units": [
+    {
+      "name": "General Anakin Skywalker",
+      "unique": "Anakin Skywalker",
+      "type": "primary",
+      "sp": 7,
+      "force": 4,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["501st", "Force User", "Galactic Republic", "Jedi"],
+      "characters": 1,
+      "stamina": 11,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Force Jump",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may jump."
+        },
+        {
+          "name": "I'm Going to End This",
+          "cost": 2,
+          "type": "reactive",
+          "effect": "After this Unit makes a combat action, it may use this abiity. One character in this Unit may make an attack targeting one of the same enemy characters within range and LOS."
+        },
+        {
+          "name": "Deflect",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After a ranged attack targeting a character in this Unit is resolved, this Unit may use this ability. If the attack roll contained one or more failure results, the attacking Unit suffers 2 damage."
+        },
+        {
+          "name": "This is Where the Fun Begins",
+          "cost": 0,
+          "type": "identity",
+          "effect": "When a character in this Unit Wounds an enemy Primary Unit or enemy Secondary Unit, after the effect is resolved, move the Struggle token one space toward your momentum tokens. Then, if the Wounded Unit is a Primary Unit, each allied Galactic Republic character may heal."
+        }
+      ]
+    },
+    {
+      "name": "CC-7567 Captain Rex",
+      "unique": "CC-7567",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["501st", "Clone Trooper", "Galactic Republic"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Get a Move On, Soldier",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose a character in this Unit or another allied Galactic Republic character. The chosen character may dash and may gain hunker."
+        },
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "I'm Always First, Kid",
+          "cost": 1,
+          "type": "reactive",
+          "effect": "If this Unit is not Wounded, after an allied Clone Trooper Supporting Unit within range 3 of this Unit makes a combat action, this Unit may use this ability. One character in this Unit may dash. If it does, it may make a 5 dice melee or ranged attack targeting one of the same enemy characters within range and LOS."
+        },
+        {
+          "name": "Bring It On, Clankers",
+          "cost": 0,
+          "type": "innate",
+          "effect": "After an allied Clone Trooper Unit within range 3 of this Unit gains hunker, one character in that Unit may heal."
+        },
+        {
+          "name": "Brothers in Arms",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit has one or more hunkers, characters in this Unit have Steadfast."
+        }
+      ]
+    },
+    {
+      "name": "501st Clone Troopers",
+      "type": "supporting",
+      "pc": 3,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["501st", "Clone Trooper", "Galactic Republic", "Trooper"],
+      "characters": 2,
+      "stamina": 7,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "Coordinated Fire: Strain",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit gains Strain."
+        },
+        {
+          "name": "Brothers in Arms",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit has one or more hunkers, characters in this Unit have Steadfast."
+        }
+      ]
+    },
+    {
+      "name": "Ahsoka Tano, Jedi No More",
+      "unique": "Ahsoka Tano",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Force Speed",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may advance."
+        },
+        {
+          "name": "What's the Matter, To Fast for You?",
+          "cost": 2,
+          "type": "reactive",
+          "effect": "When a character in this Unit would suffer damage from a melee attack, this unit may use this ability. This Unit suffers half the damage in the Damage Pool. The attacking Unit suffers the remaining damage."
+        },
+        {
+          "name": "Deflect",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After a ranged attack targeting a character in this Unit is resolved, this Unit may use this ability. If the attack roll contained one or more failure results, the attacking Unit suffers 2 damage."
+        },
+        {
+          "name": "Fierce Protector",
+          "cost": 0,
+          "type": "identity",
+          "effect": "When an enemy character Wounds another allied Unit, after the effect is resolved, one character in this Unit may advance toward the enemy character that caused the effect. Then, the character that moved may heal 3 or, if that character is Engaged with the enemy character, it may make a 5 dice melee attack targeting that enemy character."
+        }
+      ]
+    },
+    {
+      "name": "Bo-Katan Kryze",
+      "unique": "Bo-Katan Kryze",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Clan Kryze", "Death Watch", "Mandalorian", "Nite Owls"],
+      "characters": 1,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Pride of the Mandalore",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose another allied Mandalorian character. The chosen character may jump."
+        },
+        {
+          "name": "Jet Pack",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may jump."
+        },
+        {
+          "name": "Mandalorians are Stronger Together",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After this Unit makes a move action, it may use this ability. If a character in this Unit is within range 2 of another allied Mandalorian character, this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Mandalore Will Survive",
+          "cost": 0,
+          "type": "innate",
+          "effect": "After this Unit makes a focus action, one character in this Unit may dash and heal 2."
+        },
+        {
+          "name": "Some of Us Serve a Higher Purpose",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Allied Mandalorian characters within range 3 of this Unit that are contesting one or more Active objectives have Protection and Steadfast."
+        }
+      ]
+    },
+    {
+      "name": "Clan Kryze Mandalorians",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Mandalorian", "Death Watch", "Clan Kryze", "Trooper"],
+      "characters": 2,
+      "stamina": 7,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Jet Pack",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may jump."
+        },
+        {
+          "name": "Mandalorians are Stronger Together",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After this Unit makes a move action, it may use this ability. If a character in this Unit is within range 2 of another allied Mandalorian character, this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Helmet Visor",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[1]."
+        }
+      ]
+    },
+    {
+      "name": "General Obi-Wan Kenobi",
+      "unique": "Obi-Wan Kenobi",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["212th", "Force User", "Galactic Republic", "Jedi"],
+      "characters": 1,
+      "stamina": 10,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Hello There!",
+          "cost": 1,
+          "type": "active",
+          "effect": "One character in this Unit may jump. If it does, that character adds 3 dice to its next attack roll during this activation."
+        },
+        {
+          "name": "So Uncivilized....",
+          "cost": 1,
+          "type": "reactive",
+          "effect": "When a character in this Unit is targeted by a ranged attack, this Unit may use this ability. This Unit gains hunker. After the attack is resolved, if the attack roll contained one or more failure results, the attacking Unit suffers 3 damage."
+        },
+        {
+          "name": "Patience",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When you reveal this Unit's order card, if you have an Order Card in reserve, you may put that card on the top or bottom of your order deck. If you do, put this Unit's Order Card in reserve. When this Unit's Order Card is put in reserve, one character in this Unit may heal 3 and jump."
+        },
+        {
+          "name": "Knowledge and Defense",
+          "cost": 0,
+          "type": "identity",
+          "effect": "Allied Units do not lose their hunker when they become Engaged and can gain and have hunker while they are engaged. While an allied Galactic Republic Unit has one or more hunker, it adds 1 die to its defense rolls against melee attacks. After an attack targeting a character in an allied Galactic Republic Unit is resolved, that character's Unit may remove all its hunker. If it does, one character in that Unit may heal for each hunker removed. Then each character that healed may dash."
+        }
+      ]
+    },
+    {
+      "name": "CC-2224 Clone Commander Cody",
+      "unique": "CC-2224",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["212th", "Clone Commando", "Clone Trooper", "Galactic Republic"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "We've Got a Big Problem....",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose an enemy character within range 5 that is contesting an Active objective. The chosen character gains exposed."
+        },
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "Say Goodnight, Clanker!",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[2]. When a character in this Unit makes a ranged attack, the target does not benefit from Cover."
+        },
+        {
+          "name": "Bring It Down!",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When an allied Clone Trooper Supporting character within range 4 that has one or more hunker makes a ranged attack as part of a combat action, it may reroll up to two of its failure results."
+        }
+      ]
+    },
+    {
+      "name": "212th Clone Troopers",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["212th", "Clone Trooper", "Galactic Republic", "Trooper"],
+      "characters": 2,
+      "stamina": 7,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "Coordinated Fire: Pinned",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit gains pinned."
+        },
+        {
+          "name": "Brothers in Arms",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit has one or more hunker. characters in this Unit have Steadfast."
+        }
+      ]
+    },
+    {
+      "name": "Jedi Master Luminara Unduli",
+      "unique": "Luminara Unduli",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic", "Jedi"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Full Recovery",
+          "cost": 2,
+          "type": "active",
+          "effect": "Choose an allied Unit within range 3. The chosen Unit removes all damage and conditions from itself."
+        },
+        {
+          "name": "Sprint",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash."
+        },
+        {
+          "name": "Precise Strike",
+          "cost": 1,
+          "type": "reactive",
+          "effect": "After this Unit makes a combat action, it may use this ability. Choose an allied Galactic Republic Supporting Unit within range 3 of a character in this Unit. If the chosen Unit's Order Card is in the Order Deck, each character in that Unit may dash. If the chosen Unit's Order Card is not in the Order Deck, one character in the chosen Unit may make a 5 dice attack."
+        },
+        {
+          "name": "Flow of the Force",
+          "cost": 0,
+          "type": "identity",
+          "effect": "Once per turn, when an enemy Unit becomes Wounded, after the effect is resolved, one allied character may dash. When an enemy character Wounds an allied Unit, after the effect is resolved, a character in another allied Unit may heal 3. You may look at the top card of your Order Deck before revealing an Order Card or choosing to activate a Unit from reserve."
+        }
+      ]
+    },
+    {
+      "name": "Barriss Offee, Jedi Padawan",
+      "unique": "Barriss Offee",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic", "Jedi", "Padawan"],
+      "characters": 1,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Force Push",
+          "cost": 2,
+          "type": "active",
+          "effect": "Choose a character in this Unit and an enemy character within range 3 of that character. Push the chosen enemy character range 3 Away from the chosen allied character."
+        },
+        {
+          "name": "Force Speed",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may advance."
+        },
+        {
+          "name": "Slip Away",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When another allied Galactic Republic character targets an enemy character that is Engaged with one or more characters in this Unit with an attack, this Unit may use this ability. One character in this Unit that is Engaged with the target character may immediately reposition. If it does, this Unit gains hunker."
+        },
+        {
+          "name": "Faithful Padawan",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While an enemy character is Engaged with a character in this Unit and a character in an allied Jedi Primary Unit, characters in this Unit and characters in that allied Jedi Primary Unit add 2 dice to melee attack rolls targeting that enemy character. After this Unit makes a recover action, each other allied Unit within range 3 may remove 1 damage or one condition from itself."
+        }
+      ]
+    },
+    {
+      "name": "Republic Clone Commandos",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Clone Commando", "Clone Trooper", "Galactic Republic", "Trooper"],
+      "characters": 2,
+      "stamina": 6,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "Coordinated Fire: Damage",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit suffers 1 damage."
+        },
+        {
+          "name": "Ascension Cables",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Scale."
+        },
+        {
+          "name": "Brothers in Arms",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit has one or more hunker, characters in this Unit have Steadfast."
+        },
+        {
+          "name": "Commando Armor",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Protection."
+        }
+      ]
+    },
+    {
+      "name": "Jedi Master Mace Windu",
+      "unique": "Mace Windu",
+      "type": "primary",
+      "sp": 6,
+      "force": 4,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic", "Jedi"],
+      "characters": 1,
+      "stamina": 11,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Rush to Action",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's Activation, choose another allied Galactic Republic Unit. Each character in this Unit and each character in the chose Unit may dash."
+        },
+        {
+          "name": "Tempered Aggression",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in this Unit makes an attack, after all Attack Dice and Defense Dice have been rolled, this Unit may spend any number of Force to use this ability. Reroll one failure result in the attack roll for each Force spent."
+        },
+        {
+          "name": "Shatterpoint",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When this Unit is chosen to activate with a Shatterpoint Card, if its Active Stance is Form VII Vaapad, it immediately makes a focus action and characters in this Unit have Impact[2] until the end of the Turn. If its Active Stance is Jedi Master, refresh 2 Force and one character in this Unit may heal 3."
+        },
+        {
+          "name": "This Party's Over",
+          "cost": 0,
+          "type": "identity",
+          "effect": "While a character in this Unit is Engaged, allied Galactiv Republic characters within range 5 have Steadfast and Protection."
+        }
+      ]
+    },
+    {
+      "name": "CT-411 Commander Ponds",
+      "unique": "CT-411",
+      "type": "secondary",
+      "pc": 3,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Clone Commando", "Clone Trooper", "Galactic Republic"],
+      "characters": 1,
+      "stamina": 7,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Charge",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose another allied Galactic Republic character. The chosen character may dash."
+        },
+        {
+          "name": "Incoming",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Allied Clone Trooper Units within range 3 that have one or more hunker, have Immunity[Exposed]."
+        },
+        {
+          "name": "Forward Scout",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When deploying a squad that includes this Unit, allied Clone Trooper Secondary characters and allied Clone Trooper Supporting characters may be placed within range 2 of the first placed character from that squad's Primary Unit, instead of the normal range 1."
+        }
+      ]
+    },
+    {
+      "name": "ARF Clone Troopers",
+      "type": "supporting",
+      "pc": 3,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["ARF", "Clone Trooper", "Galactic Republic", "Trooper"],
+      "characters": 2,
+      "stamina": 7,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Defensive Maneuver",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit gains hunker."
+        },
+        {
+          "name": "Coordinated Fire: Exposed",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit gains Exposed."
+        },
+        {
+          "name": "Brothers in Arms",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit has one or more hunker, characters in this Unit have Steadfast."
+        },
+        {
+          "name": "Lay Low",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When a character in this Unit rolls defense dice during a Ranged attack, if this Unit has one or more hunker, add 1 Defense Expertise to the roll."
+        }
+      ]
+    },
+    {
+      "name": "Jedi Master Plo Koon",
+      "unique": "Plo Koon",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic", "Jedi"],
+      "characters": 1,
+      "stamina": 10,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "I Know If We Work Together, We Will Stay Alive",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose an allied Galactic Republic Unit. Each character in the chosen Unit may dash. Then, if the chosen Unit was a Trooper or Padawan, one Character in this Unit may dash."
+        },
+        {
+          "name": "Force Push",
+          "cost": 2,
+          "type": "active",
+          "effect": "Choose a character in this Unit and an enemy character within range 3 of that character. Push the chosen enemy character range 3 Away from the chosen allied character."
+        },
+        {
+          "name": "Deflect",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After a Ranged attack targeting a character in this Unit is resolved, this Unit may use this ability. If the attack roll contained one or more failure results, the attacking Unit suffers 2 damage."
+        },
+        {
+          "name": "We Can Do This the Simple Way or the Difficult Way",
+          "cost": 0,
+          "type": "identity",
+          "effect": "While this Unit is not Wounded, when another allied Galactic Republic character within range 3 is targeted by an attack, this Unit may gain Exposed. If it does, the defending character may use this unit's Defense Expertise Chart during the attack, instead of its own. Then, after the attack is resolved, if the defending character was a Trooper or Padawan, one character in this Unit may Dash toward the attacker."
+        }
+      ]
+    },
+    {
+      "name": "Padawan Ahsoka Tano",
+      "unique": "Ahsoka Tano",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Force User", "Galactic Republic", "Jedi", "Padawan"],
+      "characters": 1,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Race Ya",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose allied Galactic Republic Primary Unit or an allied Jedi Primary Unit. One character in the chosen Unit may dash."
+        },
+        {
+          "name": "She is Fearless",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may Jump. This Unit may use this ability two times during its activation instead of the normal one."
+        },
+        {
+          "name": "Deflect",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After a Ranged attack targeting a character in this Unit is resolved, it may use this ability. If the attack roll contained one or more Failure results, the attacking Unit suffers 2 damage."
+        },
+        {
+          "name": "Getting Ahead of Yourself Again, Snips",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After an allied Galactic Republic Supporting Unit within range 3 makes a combat action, this Unit may use this ability. One character in this unit may Jump, then make a 5 dice Melee attack targeting one of the same enemy characters within Range and LOS."
+        }
+      ]
+    },
+    {
+      "name": "CC-3636 Commander Wolffe",
+      "unique": "CC-3636",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Clone Trooper", "Galactic Republic", "Wolfpack"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Flank 'Em!",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose an allied Clone Trooper Unit. Each character in the chosen Unit may Climb."
+        },
+        {
+          "name": "Run and Gun",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may Dash. If any characters Dash, this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Pack Hunter",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When a character in this Unit makes a Melee attack targeting an enemy character that is Engaged with another allied Clone Trooper character, it adds 2 dice to the attack roll."
+        },
+        {
+          "name": "Wolfpack",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While ths Unit is not Wounded, when and allied Clone Trooper character makes an attack targeting an enemy character within range 5 of a different allied Clone Trooper Unit, the attacker's Critical Success results cannot be modified by enemy effects."
+        }
+      ]
+    },
+    {
+      "name": "104th Wolfpack Troopers",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Clone Trooper", "Galactic Republic", "Trooper", "Wolfpack"],
+      "characters": 2,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Run and Gun",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. If any characters dash, this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Coordinated Fire: Strain",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit gains Strain."
+        },
+        {
+          "name": "Pack Hunter",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When a character in this Unit makes a Melee attack targeting an enemy character that is Engaged with another allied Clone Trooper character, it adds 2 dice to the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Queen Padmè Amidala",
+      "unique": "Padmè Amidala",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Galactic Republic"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Royal Command",
+          "cost": 1,
+          "type": "active",
+          "effect": "Choose an allied Galactic Republic Unit. Each character in the chosen Unit may Advance."
+        },
+        {
+          "name": "Coordinated Fire: 2 Damage",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in an allied Handmaiden Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target suffers 2 damage."
+        },
+        {
+          "name": "Crack Shot",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[2]. When this Unit makes a focus action, each character in this Unit may dash."
+        },
+        {
+          "name": "Servant of the People",
+          "cost": 0,
+          "type": "identity",
+          "effect": "While this Unit is not Wounded and while one or more characters in this Unit are contesting an Active object, if this Unit's Active Stance is Faith in Diplomacy, allied Galactic Republic Supporting characters can contest the same Active objective, even while they are Wounded. While this Unit is not Wounded, if this Unit's Active Stance is Aggressive Negotiations, allied Galactic Republic Supporting characters within range 4 add 1 die to their attack rolls."
+        }
+      ]
+    },
+    {
+      "name": "Sabè, Royal Bodyguard",
+      "unique": "Sabè",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Galactic Republic", "Handmaiden"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Loyal Protectors",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, each allied Handmaiden character may dash toward an allied Primary character."
+        },
+        {
+          "name": "Expose Flank",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this unit may Climb. If any character ends this movement at a higher elevation than it began, charaters in this Unit have Sharpshooter[1] until the end of the Turn and this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Coordinated Assault: Dash",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, one character in this Unit may dash."
+        },
+        {
+          "name": "Bodyguard",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Allied Primary characters within range 2 and allied Secondary characters within range 2 of a character in this Unit have Cover[1]."
+        }
+      ]
+    },
+    {
+      "name": "Naboo Royal Handmaidens",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Fall of the Jedi",
+      "affliation": "Galactic Republic",
+      "keywords": ["Galactic Republic", "Handmaiden", "Trooper"],
+      "characters": 2,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Expose Flank",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this unit may Climb. If any character ends this movement at a higher elevation than it began, charaters in this Unit have Sharpshooter[1] until the end of the Turn and this Unit immediately makes a focus action."
+        },
+        {
+          "name": "Coordinated Fire: Disarm",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in another allied Galactic Republic Unit makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. If the targeted character is within range 5 of a character in this Unit, the target Unit gains Disarm."
+        },
+        {
+          "name": "Intercede",
+          "cost": 0,
+          "type": "innate",
+          "effect": "While this Unit is not Wounded, enemy characters Engaged with one or more characters in this Unit cannot target allied Primary characters or allied Secondary characters with attacks."
+        }
+      ]
+    },
+
+    {
+      "name": "Darth Vader, Jedi Hunter",
+      "unique": "Darth Vader",
+      "type": "primary",
+      "sp": 7,
+      "force": 4,
+      "era": ["Fall of the Jedi", "Age of Rebellion"],
+      "affliation": ["Galactic Republic", "Galactic Empire"],
+      "keywords": ["Force User", "Galactic Empire", "Galactic Republic", "Inquisitorious", "Sith"],
+      "characters": 1,
+      "stamina": 12,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Vader's Fury",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may Advance. During the next attack made by a character in this Unit during this activation, after all dice rolls have been modified, add 2 damage to the Damage Pool."
+        },
+        {
+          "name": "Riposte",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "After a Melee attack targeting a character in this Unit is resolved, this Unit may use this ability. If the attack roll contained one or more failure results, the attacking Unit suffers 2 damage."
+        },
+        {
+          "name": "The Sith Lord Strikes Back",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When this Unit is Wounded by an attack, after the attack is resolved, it may use this ability. One character in this Unit may immediate dash and make a 5 dice Melee attack targeting the character that Wounded it."
+        },
+        {
+          "name": "Your Hatred Makes You Powerful",
+          "cost": 0,
+          "type": "identity",
+          "effect": "When an allied character makes a Melee attack as part of a combat action, after choosing the target, the attacking Unit may suffer 2 damage. If it does,the attacker adds 3 dice to the attack roll."
+        }
+      ]
+    },
+    {
+      "name": "Obi-Wan Kenobi, Out of Hiding",
+      "unique": "Obi-Wan Kenobi",
+      "type": "secondary",
+      "pc": 4,
+      "force": 0,
+      "era": ["Fall of the Jedi", "Age of Rebellion"],
+      "affliation": "Rebels",
+      "keywords": ["Force User", "Jedi"],
+      "characters": 1,
+      "stamina": 8,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Run",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, choose a character in this Unit or another allied character that is Engaged with an enemy character. The chosen character may Heal and Reposition."
+        },
+        {
+          "name": "Mind Trick",
+          "cost": 2,
+          "type": "reactive",
+          "effect": "When an allied character within range 3 is targeted by an attack, this Unit may use this ability. The attack ends. If it is the attacker's activation, it make make another attack targeting a different charcter. If it does, remove 2 dice from the attack roll."
+        },
+        {
+          "name": "Greater Purpose",
+          "cost": 0,
+          "type": "innate",
+          "effect": "This Unit has Immunity[Exposed]. When this Unit would gain Exposed, one character in this Unit may Heal instead."
+        },
+        {
+          "name": "Last Stand of the Jedi",
+          "cost": 0,
+          "type": "innate",
+          "effect": "For each injured token this Unit has, characters in this Unit add 2 dice to their attack and defense rolls."
+        }
+      ]
+    }
+  ]
+}
