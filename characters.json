@@ -1,6 +1,7 @@
 {
   "units": [
     {
+      "id": 1,
       "name": "General Anakin Skywalker",
       "unique": "Anakin Skywalker",
       "type": "primary",
@@ -41,6 +42,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "CC-7567 Captain Rex",
       "unique": "CC-7567",
       "type": "secondary",
@@ -87,6 +89,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "501st Clone Troopers",
       "type": "supporting",
       "pc": 3,
@@ -120,6 +123,7 @@
       ]
     },
     {
+      "id": 4,
       "name": "Ahsoka Tano, Jedi No More",
       "unique": "Ahsoka Tano",
       "type": "primary",
@@ -160,6 +164,7 @@
       ]
     },
     {
+      "id": 5,
       "name": "Bo-Katan Kryze",
       "unique": "Bo-Katan Kryze",
       "type": "secondary",
@@ -206,6 +211,7 @@
       ]
     },
     {
+      "id": 6,
       "name": "Clan Kryze Mandalorians",
       "type": "supporting",
       "pc": 4,
@@ -239,6 +245,7 @@
       ]
     },
     {
+      "id": 7,
       "name": "General Obi-Wan Kenobi",
       "unique": "Obi-Wan Kenobi",
       "type": "primary",
@@ -279,6 +286,7 @@
       ]
     },
     {
+      "id": 8,
       "name": "CC-2224 Clone Commander Cody",
       "unique": "CC-2224",
       "type": "secondary",
@@ -319,6 +327,7 @@
       ]
     },
     {
+      "id": 9,
       "name": "212th Clone Troopers",
       "type": "supporting",
       "pc": 4,
@@ -352,6 +361,7 @@
       ]
     },
     {
+      "id": 10,
       "name": "Jedi Master Luminara Unduli",
       "unique": "Luminara Unduli",
       "type": "primary",
@@ -392,6 +402,7 @@
       ]
     },
     {
+      "id": 11,
       "name": "Barriss Offee, Jedi Padawan",
       "unique": "Barriss Offee",
       "type": "secondary",
@@ -432,6 +443,7 @@
       ]
     },
     {
+      "id": 12,
       "name": "Republic Clone Commandos",
       "type": "supporting",
       "pc": 4,
@@ -477,6 +489,7 @@
       ]
     },
     {
+      "id": 13,
       "name": "Jedi Master Mace Windu",
       "unique": "Mace Windu",
       "type": "primary",
@@ -517,6 +530,7 @@
       ]
     },
     {
+      "id": 14,
       "name": "CT-411 Commander Ponds",
       "unique": "CT-411",
       "type": "secondary",
@@ -551,6 +565,7 @@
       ]
     },
     {
+      "id": 15,
       "name": "ARF Clone Troopers",
       "type": "supporting",
       "pc": 3,
@@ -590,6 +605,7 @@
       ]
     },
     {
+      "id": 16,
       "name": "Jedi Master Plo Koon",
       "unique": "Plo Koon",
       "type": "primary",
@@ -630,6 +646,7 @@
       ]
     },
     {
+      "id": 17,
       "name": "Padawan Ahsoka Tano",
       "unique": "Ahsoka Tano",
       "type": "secondary",
@@ -670,6 +687,7 @@
       ]
     },
     {
+      "id": 18,
       "name": "CC-3636 Commander Wolffe",
       "unique": "CC-3636",
       "type": "secondary",
@@ -710,6 +728,7 @@
       ]
     },
     {
+      "id": 19,
       "name": "104th Wolfpack Troopers",
       "type": "supporting",
       "pc": 4,
@@ -743,6 +762,7 @@
       ]
     },
     {
+      "id": 20,
       "name": "Queen Padmè Amidala",
       "unique": "Padmè Amidala",
       "type": "primary",
@@ -783,6 +803,7 @@
       ]
     },
     {
+      "id": 21,
       "name": "Sabè, Royal Bodyguard",
       "unique": "Sabè",
       "type": "secondary",
@@ -823,6 +844,7 @@
       ]
     },
     {
+      "id": 22,
       "name": "Naboo Royal Handmaidens",
       "type": "supporting",
       "pc": 4,
@@ -857,6 +879,7 @@
     },
 
     {
+      "id": 23,
       "name": "Darth Vader, Jedi Hunter",
       "unique": "Darth Vader",
       "type": "primary",
@@ -897,6 +920,7 @@
       ]
     },
     {
+      "id": 24,
       "name": "Obi-Wan Kenobi, Out of Hiding",
       "unique": "Obi-Wan Kenobi",
       "type": "secondary",
@@ -933,6 +957,249 @@
           "cost": 0,
           "type": "innate",
           "effect": "For each injured token this Unit has, characters in this Unit add 2 dice to their attack and defense rolls."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Grand Inquisitor, Fallen Jedi",
+      "unique": "Grand Inquisitor",
+      "type": "primary",
+      "sp": 8,
+      "force": 3,
+      "era": ["Fall of the Jedi", "Age of Rebellion"],
+      "affliation": "Galactic Empire",
+      "keywords": ["Force User", "Galactic Empire", "Inquisitorious"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "You Don't Know the Power of the Dark Side",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation it may remove 2 damage or one condition from itself, then refresh 1 Force."
+        },
+        {
+          "name": "Anger, Hate, Aggression",
+          "cost": 1,
+          "type": "active",
+          "effect": "One character in this Unit may dash. If it does, that character adds 3 dice to its next attack roll during this activation. If that attack roll contains one or more Failure results, this Unit gains Exposed after the attack is resolved."
+        },
+        {
+          "name": "You are Unwise to Lower Your Defenses",
+          "cost": 1,
+          "type": "reactive",
+          "effect": "When a character in this Unit is targeted by a Melee attack, this Unit may use this ability. After the attack is resolved, if the attack roll contained one or more Failure results, the attacking Unit suffers 3 damage."
+        },
+        {
+          "name": "Perhaps I Can Find New Ways to Motivate Them",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When a character in this unit Wounds an enemy Unit, after the effect is resolved, another allied Galactic Empire character may dash."
+        },
+        {
+          "name": "You Cannot Hide Forever",
+          "cost": 0,
+          "type": "identity",
+          "effect": "At the end of this Unit's activation, if no character in this Unit Wounded an enemy Unit during that activation and if this Unit's Order Card is not in the Order Deck or in Reserve, shuffle its Order Card into your Order Deck."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Stormtrooper Sergeant",
+      "type": "secondary",
+      "pc": 3,
+      "force": 0,
+      "era": "Age of Rebellion",
+      "affliation": "Galactic Empire",
+      "keywords": ["Galactic Empire", "Stormtrooper"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Inexorable Advance",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, you may choose an allied Galactic Empire Supporting Unit. Each character in the chosen Unit may Advance. Then, if any characters Advance, the chosen Unit suffers 1 damage."
+        },
+        {
+          "name": "Imperial Firepower",
+          "cost": 1,
+          "type": "active",
+          "effect": "Choose an enemy character within range 4 of two or more allied Galactic Empire characters. The chosen character gains Pinned or Disarm."
+        },
+        {
+          "name": "Coordinated Offensive",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in this Unit or another allied Stormtrooper character makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. Add 1 die to the attack roll for each allied Stormtrooper Unit, other than the attacking Unit, that is within range 5 and LOS of the target."
+        },
+        {
+          "name": "Only Imperial Stormtroopers Are So Precise",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[1]."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Stormtroopers",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Age of Rebellion",
+      "affliation": "Galactic Empire",
+      "keywords": ["Galactic Empire", "Stormtrooper", "Trooper"],
+      "characters": 2,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Assault Tactics",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. Then this Unit may suffer damage to immediately perform a focus action."
+        },
+        {
+          "name": "For the Empire!",
+          "cost": 1,
+          "type": "active",
+          "effect": "Action: Choose an enemy character Engaged with one or more characters in this Unit and one of the allied characters it is Engaged with. Push the chosen enemy character range 2 away from the chosen allied character. Then this Unit gains Exposed."
+        },
+        {
+          "name": "Only Imperial Stormtroopers Are So Precise",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[1]."
+        }
+      ]
+    },
+
+    {
+      "id": 28,
+      "name": "Darth Vader, The Emperor's Servant",
+      "unique": "Darth Vader",
+      "type": "primary",
+      "sp": 7,
+      "force": 3,
+      "era": "Age of Rebellion",
+      "affliation": "Galactic Empire",
+      "keywords": ["Force User", "Galactic Empire", "Sith"],
+      "characters": 1,
+      "stamina": 12,
+      "durability": 3,
+      "image": "",
+      "abilities": [
+        {
+          "name": "You Don't Know the Power of the Dark Side",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation it may remove 2 damage or one condition from itself, then refresh 1 Force."
+        },
+        {
+          "name": "Anger, Hate, Aggression",
+          "cost": 1,
+          "type": "active",
+          "effect": "One character in this Unit may dash. If it does, that character adds 3 dice to its next attack roll during this activation. If that attack roll contains one or more Failure results, this Unit gains Exposed after the attack is resolved."
+        },
+        {
+          "name": "You are Unwise to Lower Your Defenses",
+          "cost": 1,
+          "type": "reactive",
+          "effect": "When a character in this Unit is targeted by a Melee attack, this Unit may use this ability. After the attack is resolved, if the attack roll contained one or more Failure results, the attacking Unit suffers 3 damage."
+        },
+        {
+          "name": "Perhaps I Can Find New Ways to Motivate Them",
+          "cost": 0,
+          "type": "innate",
+          "effect": "When a character in this unit Wounds an enemy Unit, after the effect is resolved, another allied Galactic Empire character may dash."
+        },
+        {
+          "name": "You Cannot Hide Forever",
+          "cost": 0,
+          "type": "identity",
+          "effect": "At the end of this Unit's activation, if no character in this Unit Wounded an enemy Unit during that activation and if this Unit's Order Card is not in the Order Deck or in Reserve, shuffle its Order Card into your Order Deck."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Stormtrooper Sergeant",
+      "type": "secondary",
+      "pc": 3,
+      "force": 0,
+      "era": "Age of Rebellion",
+      "affliation": "Galactic Empire",
+      "keywords": ["Galactic Empire", "Stormtrooper"],
+      "characters": 1,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Inexorable Advance",
+          "cost": 0,
+          "type": "tactic",
+          "effect": "At the start of this Unit's activation, you may choose an allied Galactic Empire Supporting Unit. Each character in the chosen Unit may Advance. Then, if any characters Advance, the chosen Unit suffers 1 damage."
+        },
+        {
+          "name": "Imperial Firepower",
+          "cost": 1,
+          "type": "active",
+          "effect": "Choose an enemy character within range 4 of two or more allied Galactic Empire characters. The chosen character gains Pinned or Disarm."
+        },
+        {
+          "name": "Coordinated Offensive",
+          "cost": 0,
+          "type": "reactive",
+          "effect": "When a character in this Unit or another allied Stormtrooper character makes an attack as part of a combat action, before dice are rolled, this Unit may use this ability. Add 1 die to the attack roll for each allied Stormtrooper Unit, other than the attacking Unit, that is within range 5 and LOS of the target."
+        },
+        {
+          "name": "Only Imperial Stormtroopers Are So Precise",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[1]."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Stormtroopers",
+      "type": "supporting",
+      "pc": 4,
+      "force": 0,
+      "era": "Age of Rebellion",
+      "affliation": "Galactic Empire",
+      "keywords": ["Galactic Empire", "Stormtrooper", "Trooper"],
+      "characters": 2,
+      "stamina": 9,
+      "durability": 2,
+      "image": "",
+      "abilities": [
+        {
+          "name": "Assault Tactics",
+          "cost": 1,
+          "type": "active",
+          "effect": "Each character in this Unit may dash. Then this Unit may suffer damage to immediately perform a focus action."
+        },
+        {
+          "name": "For the Empire!",
+          "cost": 1,
+          "type": "active",
+          "effect": "Action: Choose an enemy character Engaged with one or more characters in this Unit and one of the allied characters it is Engaged with. Push the chosen enemy character range 2 away from the chosen allied character. Then this Unit gains Exposed."
+        },
+        {
+          "name": "Only Imperial Stormtroopers Are So Precise",
+          "cost": 0,
+          "type": "innate",
+          "effect": "Characters in this Unit have Sharpshooter[1]."
         }
       ]
     }
