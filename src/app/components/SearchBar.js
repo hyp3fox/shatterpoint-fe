@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
-import units from '../../../characters.json'
+import charactersList from '../../../characters.json'
 
 const SearchBar = () => {
     const [query, setQuery] = useState("");
-    console.log(units);
-    const filteredData = units.units.filter(unit => 
+    console.log(characterList);
+    const filteredData = characterList.units.filter(unit => 
       unit.name.toLowerCase().includes(query.toLowerCase())
     );
   
