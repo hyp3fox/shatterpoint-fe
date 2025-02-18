@@ -5,20 +5,14 @@ import characters from '../../../characters.json'
 
 const SearchBar = () => {
     const [query, setQuery] = useState("");
-    console.log(character);
+    console.log(characters);
     const filteredData = characters.units.filter(unit =>
       unit.name.toLowerCase().includes(query.toLowerCase())
     );
 
     return (
       <div className="p-4 max-w-md mx-auto">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="w-full p-2 border rounded-md"
-        />
+        <input className="w-full p-2 border rounded-md" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
         <ul className="mt-2 border rounded-md p-2">
           {filteredData.length > 0 ? (
             filteredData.map(item => (

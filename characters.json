@@ -13,7 +13,7 @@
       "characters": 1,
       "stamina": 11,
       "durability": 3,
-      "image": "",
+      "image": "https://placecats.com/300/200",
       "abilities": [
         {
           "name": "Force Jump",
