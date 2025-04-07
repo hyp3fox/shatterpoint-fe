@@ -10,45 +10,62 @@ const SearchBar = () => {
       unit.name.toLowerCase().includes(query.toLowerCase())
     );
 
+    const eraIcons = {
+      "Fall of the Jedi": "/images/fall-of-the-jedi-icon.svg",
+      "Reign of the Empire": "/images/reign-of-the-empire-icon.svg",
+      "Age of Rebellion": "/images/age-of-rebellion-icon.svg",
+      "The New Republic": "/images/the-new-republic-icon.svg",
+    }
+
     return (
       <div className="p-4 max-w-lg mx-auto">
         <input className="w-full p-2 border rounded-md" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
         
         {filteredData.length > 0 ? (
-          filteredData.map(item => (
-            <div className="bg-white border-2 border-gray-400 max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal" key={item.id}>
+          filteredData.map(character => (
+            <div className="bg-white border-2 border-gray-400 max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal" key={character.id}>
               <div className="mb-8">
 
-                const result = str.toLowerCase().replace(/[^0-9a-z ]+/g,'').trim().replace(/\s+/g, '-');
-
-                {/* Character Era */}
-                {item.era == "Fall of the Jedi" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/fall-of-the-jedi-icon.svg" alt={item.era} /> 
-                : item.era == "Reign of the Empire" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/reign-of-the-empire-icon.svg" alt={item.era} />
-                : item.era == "Age of Rebellion" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/age-of-rebellion-icon.svg" alt={item.era} />
-                : item.era == "The New Republic" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/the-new-republic-icon.svg" alt={item.era} />
-                : ""}
-
                 {/* Character Era - DRY */}
-                {item.era == "Fall of the Jedi" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/fall-of-the-jedi-icon.svg" alt={item.era} /> 
-                : item.era == "Reign of the Empire" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/reign-of-the-empire-icon.svg" alt={item.era} />
-                : item.era == "Age of Rebellion" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/age-of-rebellion-icon.svg" alt={item.era} />
-                : item.era == "The New Republic" ? <img className="w-10 h-10 rounded-full mr-4" src="/images/the-new-republic-icon.svg" alt={item.era} />
-                : ""}  
+                <div className="flex characters-center mr-4 w-10 h-10 rounded-full overflow-hidden">
+                {
+                  (Array.isArray(character.era) ? character.era : [character.era]).length === 1 ? (
+                    <img
+                      className="w-full h-full object-cover"
+                      src={`/images/${(Array.isArray(character.era) ? character.era[0] : character.era).toLowerCase().replace(/\s+/g, "-")}-icon.svg`}
+                      alt={Array.isArray(character.era) ? character.era[0] : character.era}
+                    />
+                  ) : (
+                    <>
+                      <img
+                        className="w-1/2 h-full object-cover object-left"
+                        src={`/images/${character.era[0].toLowerCase().replace(/\s+/g, "-")}-icon.svg`}
+                        alt={character.era[0]}
+                      />
+                      <img
+                        className="w-1/2 h-full object-cover object-right"
+                        src={`/images/${character.era[1].toLowerCase().replace(/\s+/g, "-")}-icon.svg`}
+                        alt={character.era[1]}
+                      />
+                    </>
+                  )
+                }
+              </div>
 
 
                 {/* Character Name */}
-                <div className="text-gray-900 font-bold text-xl mb-2">{item.name}</div>
+                <div className="text-gray-900 font-bold text-xl mb-2">{character.name}</div>
 
                 {/* Character Stats */}
                 <p className="text-gray-700 text-base">
-                  {item.sp ? item.sp + "SP" + " | " : item.pc +  "PC" + " | "} {item.force} Force | {item.stamina} Stamina | {item.durability} Durability
+                  {character.sp ? character.sp + "SP" + " | " : character.pc +  "PC" + " | "} {character.force} Force | {character.stamina} Stamina | {character.durability} Durability
                 </p>  
               </div>
 
               {/* Character Tags */}
-              <div className="flex items-center">
+              <div className="flex characters-center">
                 <section className="tag-list text-gray-900 leading-none text-sm">
-                  {item.keywords.map((keyword, index) =>  (
+                  {character.keywords.map((keyword, index) =>  (
                     <span className="tag" key={index}>{keyword}</span>
                   ))}
                 </section>
