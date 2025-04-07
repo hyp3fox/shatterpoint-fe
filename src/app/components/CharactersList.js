@@ -6,7 +6,6 @@ import CharactersCardList from './CharactersCardList'
 const CharactersList = () => {
   return (
     <div>
-        CharactersList:
         <SearchBar />
     </div>
   )
