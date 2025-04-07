@@ -19,15 +19,15 @@ const SearchBar = () => {
 
     return (
       <div className="p-4 max-w-lg mx-auto">
-        <input className="w-full p-2 border rounded-md" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input className="w-full p-2 border rounded-md mb-5" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
         
         {filteredData.length > 0 ? (
           filteredData.map(character => (
-            <div className="bg-white border-2 border-gray-400 max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal" key={character.id}>
+            <div className="bg-white border-2 border-gray-400 max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal mb-3" key={character.id}>
               <div className="mb-8">
 
                 {/* Character Era - DRY */}
-                <div className="flex characters-center mr-4 w-10 h-10 rounded-full overflow-hidden">
+                <div className="flex characters-center w-10 h-10 rounded-full overflow-hidden">
                 {
                   (Array.isArray(character.era) ? character.era : [character.era]).length === 1 ? (
                     <img
@@ -54,19 +54,19 @@ const SearchBar = () => {
 
 
                 {/* Character Name */}
-                <div className="text-gray-900 font-bold text-xl mb-2">{character.name}</div>
+                <div className="text-gray-900 font-bold text-xl mb-2 ml-1">{character.name}</div>
 
                 {/* Character Stats */}
-                <p className="text-gray-700 text-base">
+                <p className="text-gray-700 text-base ml-1">
                   {character.sp ? character.sp + "SP" + " | " : character.pc +  "PC" + " | "} {character.force} Force | {character.stamina} Stamina | {character.durability} Durability
                 </p>  
               </div>
 
               {/* Character Tags */}
-              <div className="flex characters-center">
+              <div className="flex characters-center ml-1">
                 <section className="tag-list text-gray-900 leading-none text-sm">
                   {character.keywords.map((keyword, index) =>  (
-                    <span className="tag" key={index}>{keyword}</span>
+                    <span className={"tag-" + keyword.toLowerCase().replace(/\s+/g, "-")} key={index}>{keyword}</span>
                   ))}
                 </section>
               </div>

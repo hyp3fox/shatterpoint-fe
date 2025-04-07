@@ -21,7 +21,7 @@ body {
 }
 
 
-.tag {
+.tag-list span {
   background: #c0c0c0;
   border-radius: 10px;
   float: left;
@@ -30,6 +30,6 @@ body {
   width: auto;
 }
 
-.tag:not(:last-child) {
+.tag-list span:not(:last-child) {
   margin-right: 5px;
 }
