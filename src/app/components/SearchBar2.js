@@ -50,7 +50,7 @@ const SearchBar2 = () => {
           <ul className="list-disc pl-5">
             {inventory.map((item) => (
               <li key={item.id} className="flex justify-between items-center mb-1">
-                <span className="text-black">{item.name}</span> | <span class="text-black text-small">{item.type}</span>
+                <span className="text-black">{item.name}</span> | <span className="text-black text-small">{item.type}</span>
                 <button
                   onClick={() => removeFromInventory(item.id)}
                   className="ml-2 text-xs text-red-600 hover:underline"
