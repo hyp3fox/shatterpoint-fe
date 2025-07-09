@@ -1,7 +1,17 @@
+'use client'
+
+import React, { useEffect, useState } from 'react'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function Teams() {
+  const [inventory, setInventory] = useState([]);
+
+  useEffect(() => {
+      const savedInventory = JSON.parse(localStorage.getItem("characterInventory")) || [];
+      setInventory(savedInventory);
+    }, []);
+  
   return (
     <div>
       <Header />
