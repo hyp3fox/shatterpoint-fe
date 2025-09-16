@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import characters from '../../../characters.json'
 
 const SearchBar2 = () => {
@@ -37,7 +37,7 @@ const SearchBar2 = () => {
   return (
     <div className="p-4 max-w-lg mx-auto">
       <input
-        className="w-full p-2 border rounded-md mb-5"
+        className="main-search w-full p-2 rounded-lg shadow-md mb-5"
         type="text"
         placeholder="Search..."
         value={query}
@@ -50,7 +50,7 @@ const SearchBar2 = () => {
           <ul className="list-disc pl-5">
             {inventory.map((item) => (
               <li key={item.id} className="flex justify-between items-center mb-1">
-                <span className="text-black">{item.name}</span> | <span class="text-black text-small">{item.type}</span>
+                <span className="text-black">{item.name}</span> | <span className="text-black text-small">{item.type}</span>
                 <button
                   onClick={() => removeFromInventory(item.id)}
                   className="ml-2 text-xs text-red-600 hover:underline"
@@ -65,7 +65,7 @@ const SearchBar2 = () => {
 
       {filteredData.length > 0 ? (
         filteredData.map(character => (
-          <div className="bg-white border-2 border-gray-400 max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal mb-3 mt-3" key={character.id}>
+          <div className="character-card max-w-lg w-full lg:max-w-full lg:flex p-4 flex flex-col justify-between leading-normal rounded-2xl shadow-md mb-3 mt-3" key={character.id}>
             <div className="mb-8">
               {/* Character Era */}
               <div className="flex items-center w-10 h-10 rounded-full overflow-hidden mb-2">
@@ -94,8 +94,8 @@ const SearchBar2 = () => {
               </div>
 
               {/* Character Name & Stats */}
-              <div className="text-gray-900 font-bold text-xl mb-2 ml-1">{character.name}</div>
-              <p className="text-gray-700 text-base ml-1">
+              <div className="font-bold text-xl mb-2 ml-1">{character.name}</div>
+              <p className="text-base ml-1">
                 {character.sp ? character.sp + "SP | " : character.pc + "PC | "}
                 {character.force} Force | {character.stamina} Stamina | {character.durability} Durability
               </p>
@@ -105,7 +105,7 @@ const SearchBar2 = () => {
               <section className="tag-list text-gray-900 leading-none text-sm">
                 {character.keywords.map((keyword, index) => (
                   <span
-                    className={"tag-" + keyword.toLowerCase().replace(/\s+/g, "-") + " mr-1"}
+                    className={"tag-" + keyword.toLowerCase().replace(/\s+/g, "-") + " rounded-lg mr-1"}
                     key={index}
                   >
                     {keyword}
@@ -114,9 +114,9 @@ const SearchBar2 = () => {
               </section>
               <button
                 onClick={() => addToInventory(character)}
-                className="bg-blue-500 text-white text-xs px-2 py-1 rounded hover:bg-blue-600"
+                className="shatterdex-primary-btn shatterdex-btn-transition text-white text-xs px-2 py-1 rounded-2xl"
               >
-                Add to Squad
+                +
               </button>
             </div>
           </div>
