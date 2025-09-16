@@ -1,13 +1,14 @@
-import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
+import Logo from './Logo'
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header>
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <a href="/" className="text-2xl font-bold text-gray-800">
-          Shatterpoint App
+          <Logo />
         </a>
 
         {/* Squad/Strike Team Icon */}

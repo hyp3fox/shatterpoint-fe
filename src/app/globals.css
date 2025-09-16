@@ -3,27 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fff;
   --foreground: #171717;
+  --text-light: #171717;
+  --text-dark: #fff;
+  --shatterdex-deep-purple: #673ab7;
+  --shatterdex-lavender: #e6e6fa;
+  --shatterdex-dark-purple: #4527a0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fefefe;
-    --foreground: #ededed;
+    --background: #181818;
+    --foreground: #1d1d1d;
+    --text-light: #fff;
+    --text-dark: #f0f1f3
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--text-light);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif; 
 }
 
+.character-card {
+  background: var(--foreground);
+}
+
 
 .tag-list span {
-  background: #c0c0c0;
-  border-radius: 10px;
+  background: var(--shatterdex-lavender); /* Lavender */
   float: left;
   padding: 10px;
   text-align: center;
@@ -32,4 +42,26 @@ body {
 
 .tag-list span:not(:last-child) {
   margin-right: 5px;
+}
+
+.shatterdex-primary-btn {
+  background: var(--shatterdex-deep-purple);
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+.shatterdex-primary-btn:hover {
+  background: var(--shatterdex-dark-purple);
+
+}
+
+.shatterdex-btn-transition {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main-search {
+  background: var(--foreground);
+  color: var(--text-light);
 }

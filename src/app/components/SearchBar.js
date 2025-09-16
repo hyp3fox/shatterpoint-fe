@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import characters from '../../../characters.json'
 import Image from 'next/image'
 
@@ -19,7 +19,7 @@ const SearchBar = () => {
 
     return (
       <div className="p-4 max-w-lg mx-auto">
-        <input className="w-full p-2 border rounded-md mb-5" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input className="w-full p-2 rounded-lg shadow-md mb-5" type="text" placeholder="Search..." value={query} onChange={(e) => setQuery(e.target.value)} />
         
         {filteredData.length > 0 ? (
           filteredData.map(character => (
