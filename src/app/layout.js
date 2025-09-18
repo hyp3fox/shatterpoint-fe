@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
